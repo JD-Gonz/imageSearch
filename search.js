@@ -1,7 +1,7 @@
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
-var url = "mongodb://urlUser:password1@ds044229.mlab.com:44229/urls"; //process.env.URLS_DB;
+var url = process.env.URLS_DB;
 
 module.exports = {
   getResults: function () {
