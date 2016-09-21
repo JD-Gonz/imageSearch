@@ -1,0 +1,22 @@
+{
+  "name": "image_search",
+  "version": "1.0.0",
+  "description": "a full stack JavaScript app that allows you to search for images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonz001/imageSearch.git"
+  },
+  "author": "JD Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgonz001/imageSearch/issues"
+  },
+  "homepage": "https://github.com/dgonz001/imageSearch#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
