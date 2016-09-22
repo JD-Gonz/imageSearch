@@ -1,9 +1,10 @@
 var moment = require('moment');
 var mongodb = require('mongodb');
-var bing = require('node-bing-api')({ accKey: process.env.MSFT_KEY });
+var Search = require('bing.search');
 var MongoClient = mongodb.MongoClient;
 
 var url = process.env.URLS_DB;
+var search = new Search(process.env.MSFT_KEY);
 
 
 module.exports = {
@@ -12,9 +13,12 @@ module.exports = {
       if (err) throw err;
       collection.insert({"term": params.s, "when": moment().format()});
     });
-    bing.images(params.s, {top: params.q}, function(error, res, body){
-      console.log(body);
-    });
+    search.images(params.s, {top: 10, skip: params.q},
+      function(err, results) {
+        if (err) throw err;
+        cb(null, results);
+      }
+    );
   },
   
   getSearches: function(cb) {
