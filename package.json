@@ -1,6 +1,6 @@
 {
   "name": "image_search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a full stack JavaScript app that allows you to search for images",
   "main": "index.js",
   "scripts": {

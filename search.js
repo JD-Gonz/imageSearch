@@ -16,6 +16,16 @@ module.exports = {
     search.images(params.s, {top: 10, skip: params.q},
       function(err, results) {
         if (err) throw err;
+        for(var i in results)
+        {
+            delete results[i].id;
+            delete results[i].displayUrl;
+            delete results[i].width;
+            delete results[i].height;
+            delete results[i].size;
+            delete results[i].type;
+            delete results[i].thumbnail;
+        } 
         cb(null, results);
       }
     );
