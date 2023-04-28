@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dgonz001/imageSearch.git"
+    "url": "git+https://github.com/jd-gonz/imageSearch.git"
   },
   "author": "JD Gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dgonz001/imageSearch/issues"
+    "url": "https://github.com/jd-gonz/imageSearch/issues"
   },
-  "homepage": "https://github.com/dgonz001/imageSearch#readme",
+  "homepage": "https://github.com/jd-gonz/imageSearch#readme",
   "dependencies": {
     "bing.search": "^1.0.1",
     "express": "^4.14.0",
